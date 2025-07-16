@@ -158,3 +158,29 @@ main {
   font-weight: bold;
   border-bottom: 2px solid #ffd54f;
 }
+
+.announcement-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #ffeeba;
+  padding: 0.5rem;
+  border-bottom: 2px solid #f0ad4e;
+  font-size: 1rem;
+}
+
+.status-tag {
+  font-weight: bold;
+  color: #856404;
+  margin-right: 1rem;
+}
+
+.topic-scroll {
+  flex: 1;
+  color: #5c4216;
+  font-weight: 500;
+}
+
+marquee {
+  white-space: nowrap;
+}
