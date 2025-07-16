@@ -1,0 +1,160 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #4a90e2;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background: var(--accent-color);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu-toggle {
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav.hidden {
+  display: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  background: #f0f0f0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.blog-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+
+
+@media (max-width: 768px) {
+  /* Footer stays at bottom */
+footer {
+
+background-color: #4a90e2;
+ color: black;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+} 
+
+}
+
+
+@media (min-width: 768px) {
+  .blog-grid {
+    flex-direction: row;
+  }
+/* Footer stays at bottom */
+footer {
+  background: #918787;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+}
+
+.blog-column {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 1rem;
+}
+
+form input,
+form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#confirmation {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+.back {
+  display: inline-block;
+  margin-left: 1rem;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* Make the page take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content stretches to fill space */
+main {
+  flex: 1;
+}
+
+
+.announcement {
+  background: #ffecb3;
+  color: #a67c00;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #ffd54f;
+}
